@@ -1,0 +1,58 @@
+/* TodoForm.css */
+
+.form-container {
+    margin-bottom: 20px;
+  }
+  
+  .form-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+
+
+  /* TodoList.css */
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-item button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .todo-item button:hover {
+    background-color: #e53935;
+  }
+  
+  

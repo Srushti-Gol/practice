@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './style.css';
 
 const TodoForm = ({ fetchTodos }) => {
   const [title, setTitle] = useState('');
@@ -16,7 +17,7 @@ const TodoForm = ({ fetchTodos }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-container" onSubmit={handleSubmit}>
       <input
         type="text"
         value={title}

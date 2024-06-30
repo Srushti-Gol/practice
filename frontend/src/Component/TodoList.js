@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './style.css'; // Import CSS file for TodoList
 
 const TodoList = ({ todos, fetchTodos }) => {
   const handleDelete = async (id) => {
@@ -12,9 +13,9 @@ const TodoList = ({ todos, fetchTodos }) => {
   };
 
   return (
-    <ul>
+    <ul className="todo-list">
       {todos.map((todo) => (
-        <li key={todo._id}>
+        <li key={todo._id} className="todo-item">
           {todo.title}
           <button onClick={() => handleDelete(todo._id)}>Delete</button>
         </li>
