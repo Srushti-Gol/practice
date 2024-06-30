@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from 'axios';
-import './style.css'; // Import CSS file for TodoList
+import './style.css';
 
 const TodoList = ({ todos, fetchTodos }) => {
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/todos/${id}`);
+      await axios.delete(`https://practice-k7rg.onrender.com/api/todos/${id}`);
       fetchTodos();
     } catch (error) {
       console.error('Error deleting todo:', error);

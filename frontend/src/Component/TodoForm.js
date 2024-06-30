@@ -8,7 +8,7 @@ const TodoForm = ({ fetchTodos }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/todos', { title });
+      await axios.post('https://practice-k7rg.onrender.com/api/todos', { title });
       setTitle('');
       fetchTodos();
     } catch (error) {

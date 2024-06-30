@@ -8,7 +8,7 @@ const TodoApp = () => {
 
   const fetchTodos = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/todos');
+      const response = await axios.get('https://practice-k7rg.onrender.com/api/todos');
       setTodos(response.data);
     } catch (error) {
       console.error('Error fetching todos:', error);
